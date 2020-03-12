@@ -13,10 +13,11 @@ Zadanie projektu:	Kalkulačka
 Stanovené termíny:
 	Do 19.3. 7:00 - vedúci tímu(xzatko02) odovzdá do IS FIT predbežný plán projektu
 
-	Do 23.4. 7:00 - vedúci tímu(xzatko02) odovzdá do IS FIT v jednom adresári nasledejúce súbory: 	obsah repozitáru projektu
-													inštalátor programu (okrem samotného programu nainštaluje aj odinštalátor)
-													vygenerovanú programovú dokumentáciu
-													(treba skontrolovať, či repozitár obsahuje všetky potrebné súbory)
+	Do 23.4. 7:00 - vedúci tímu(xzatko02) odovzdá do IS FIT v jednom adresári nasledejúce súbory: 	
+				obsah repozitáru projektu
+				inštalátor programu (okrem samotného programu nainštaluje aj odinštalátor)
+				vygenerovanú programovú dokumentáciu
+				(treba skontrolovať, či repozitár obsahuje všetky potrebné súbory)
 							
 
 Pridelenie úloh projektu jednotlivým riešiteľom:
@@ -36,6 +37,7 @@ Zvolené komunikačné kanály v tíme:
 	-pre jednoduchú a rýchlu komunikáciu v tíme
 
 
-Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže).
+Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže):
 	
 			-GitHub-
+	-pre správu verzií projektu
