@@ -33,11 +33,10 @@ xkubin24:
 Zvolené komunikačné kanály v tíme:
 
 			-Discord-
-
 	-pre jednoduchú a rýchlu komunikáciu v tíme
 
 
 Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže):
 	
 			-GitHub-
-	-pre správu verzií projektu
+	-pre správu verzií projektu a projektových súborov
