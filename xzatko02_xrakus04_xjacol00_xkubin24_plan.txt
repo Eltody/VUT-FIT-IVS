@@ -18,6 +18,10 @@ Stanovené termíny:
 				inštalátor programu (okrem samotného programu nainštaluje aj odinštalátor)
 				vygenerovanú programovú dokumentáciu
 				(treba skontrolovať, či repozitár obsahuje všetky potrebné súbory)
+				
+	Do 9.5. 7:00 - 	každý člen tímu odovzdá súbor xloginNN_problemy.txt, ktorý bude obsahovať zoznam problémov, 
+			ktorý podľa daného člena tímu tím mal, vrátane pravdepodobných
+			príčin a navrhovaných riešení (čo sme mohli urobiť lepšie)
 							
 
 Pridelenie úloh projektu jednotlivým riešiteľom:
