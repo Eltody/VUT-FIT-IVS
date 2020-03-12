@@ -40,3 +40,6 @@ Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře 
 	
 			-GitHub-
 	-pre správu verzií projektu a projektových súborov
+
+Zvolený programovací jazyk:
+	-c#, naklikat GUI vo Visual Studiu / WPF (najmenej starosti - zdroj Discord) - Visual Studio exportne instalacni balicek
