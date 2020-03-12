@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------------
+                        	IVS_proj_2: Plán
+--------------------------------------------------------------------------------
+Názov tímu: 		Slovenská (j)elita
+
+Èlenovia tímu: 		xzatko02
+			xrakus04
+			xjacol00
+			xkubin24
+
+Zadanie projektu:	Kalkulaèka
+
+Stanovené termíny:
+	Do 19.3. 7:00 - vedúci tímu(xzatko02) odovzdá do IS FIT predbenı plán projektu
+
+	Do 23.4. 7:00 - vedúci tímu(xzatko02) odovzdá do IS FIT v jednom adresári nasledejúce súbory: 	obsah repozitáru projektu
+													inštalátor programu (okrem samotného programu nainštaluje aj odinštalátor)
+													vygenerovanú programovú dokumentáciu
+													(treba skontrolova, èi repozitár obsahuje všetko potrebné
+							
+
+Pridelenie úloh projektu jednotlivım riešit¾om:
+
+xzatko02:
+
+xrakus04:
+
+xjacol00:
+
+xkubin24:
+
+Zvolené komunikaèné kanály v tíme:
+
+			-Discord-
+
+	-pre jednoduchú a rıchlu komunikáciu v tíme
+
+
+			-Disk google-
+
+	-pre zdie¾anie súborov
+
+
+Zvolenı systém pre správu verzií a hosting:+ informaci, jak do repozitáøe mohou nahlédnout vyuèující/cvièící (viz níe).
