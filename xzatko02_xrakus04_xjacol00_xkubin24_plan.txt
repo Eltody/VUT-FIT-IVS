@@ -24,16 +24,16 @@ Stanovené termíny:
 			príčin a navrhovaných riešení (čo sme mohli urobiť lepšie)
 			
 Termíny:
-	Základní struktura     20.3.
+	Základná štruktúra     20.3.
 	Testy knihovna         23. 3.
-	Mockupy                25. 3.
-	Implementace knihovny  28. 3.
-	Vytvoření GUI          2. 4.
-	Instalátor a odinstalátor  5. 4.
-	Propojení GUI a knihovny   8. 4.
+	Mockups                25. 3.
+	Implementácia knihovny  28. 3.
+	Vytvorenie GUI          2. 4.
+	Inštalátor a odinštalátor  5. 4.
+	Propojenie GUI a knihovny   8. 4.
 	Profiling knihovny        11. 4.
-	Uživatelská dokumentace   18. 4.
-	Vygenerování programové dokumentace  20. 4.
+	Uživateľská dokumentácia   18. 4.
+	Vygenerovanie programovej dokumentácie  20. 4.
 							
 
 Pridelenie úloh projektu jednotlivým riešiteľom:
