@@ -24,13 +24,14 @@ Stanovené termíny:
 			príčin a navrhovaných riešení (čo sme mohli urobiť lepšie)
 			
 Termíny:
-	Základná štruktúra     20.3.
+	Vypracovanie prebežného plánu projektu 16.3.
+	Základná štruktúra projektu    20.3.
 	Testy knihovna         23. 3.
 	Mockups                25. 3.
 	Implementácia knihovny  28. 3.
 	Vytvorenie GUI          2. 4.
 	Inštalátor a odinštalátor  5. 4.
-	Propojenie GUI a knihovny   8. 4.
+	Prepojenie GUI a knihovny   8. 4.
 	Profiling knihovny        11. 4.
 	Uživateľská dokumentácia   18. 4.
 	Vygenerovanie programovej dokumentácie  20. 4.
@@ -38,13 +39,13 @@ Termíny:
 
 Pridelenie úloh projektu jednotlivým riešiteľom:
 
-xzatko02:
+xzatko02: Vypracovanie prebežného plánu projektu, Základná štruktúra projektu, Inštalátor a odinštalátor, Mockups,
 
-xrakus04:
+xrakus04: Testy knihovna, Prepojenie GUI a knihovny
 
-xjacol00:
+xjacol00: Implementácia knihovny, Profiling knihovny
 
-xkubin24:
+xkubin24: Uživateľská dokumentácia, Vygenerovanie programovej dokumentácie
 
 Zvolené komunikačné kanály v tíme:
 
@@ -58,4 +59,4 @@ Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře 
 	-pre správu verzií projektu a projektových súborov
 
 Zvolený programovací jazyk:
-	-c#, naklikat GUI vo Visual Studiu / WPF (najmenej starosti - zdroj Discord) - Visual Studio exportne instalacni balicek
+	-c#, Visual Studio (GUI)
