@@ -24,7 +24,7 @@ Stanovené termíny:
 			príčin a navrhovaných riešení (čo sme mohli urobiť lepšie)
 			
 Termíny:
-	Vypracovanie prebežného plánu projektu 16.3.
+	Vypracovanie predbežného plánu projektu 16.3.
 	Základná štruktúra projektu    20.3.
 	Testy knihovna         23. 3.
 	Mockups                25. 3.
@@ -53,10 +53,11 @@ Zvolené komunikačné kanály v tíme:
 	-pre jednoduchú a rýchlu komunikáciu v tíme
 
 
-Zvolený systém pre správu verzií a hosting:+ informaci, jak do repozitáře mohou nahlédnout vyučující/cvičící (viz níže):
+Zvolený systém pre správu verzií:
 	
 			-GitHub-
 	-pre správu verzií projektu a projektových súborov
+	-pridelené oprávnenie pre užívateľa: ivskontrola (ivs.kontrola@gmail.com)
 
 Zvolený programovací jazyk:
 	-c#, Visual Studio (GUI)
