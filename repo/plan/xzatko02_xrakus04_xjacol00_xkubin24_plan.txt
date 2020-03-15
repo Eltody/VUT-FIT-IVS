@@ -39,13 +39,13 @@ Termíny:
 
 Pridelenie úloh projektu jednotlivým riešiteľom:
 
-xzatko02: Vypracovanie prebežného plánu projektu, Základná štruktúra projektu, Inštalátor a odinštalátor, Mockups,
+	xzatko02: Vypracovanie prebežného plánu projektu, Základná štruktúra projektu, Inštalátor a odinštalátor, Mockups,
 
-xrakus04: Testy knihovna, Prepojenie GUI a knihovny
+	xrakus04: Testy knihovna, Prepojenie GUI a knihovny
 
-xjacol00: Implementácia knihovny, Profiling knihovny
+	xjacol00: Implementácia knihovny, Profiling knihovny
 
-xkubin24: Uživateľská dokumentácia, Vygenerovanie programovej dokumentácie
+	xkubin24: Uživateľská dokumentácia, Vygenerovanie programovej dokumentácie
 
 Zvolené komunikačné kanály v tíme:
 
