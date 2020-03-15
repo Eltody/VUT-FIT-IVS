@@ -1,17 +1,16 @@
 Prostredi
 ---------
 
-Ubuntu 64bit
 Windows 64bit
 
 Autori
 ------
 
-Nazev tymu
-- xlogin01 jmeno prijmeni 
-- xlogin02 jmeno prijmeni 
-- xlogin03 jmeno prijmeni 
-- xlogin04 jmeno prijmeni 
+Slovenská j(elita)
+- xzatko02 Tomáš Zaťko
+- xrakus04 Martin Rakús 
+- xjacol00 Patrik Jacola 
+- xkubin24 Monika Kubincova
 
 Licence
 -------
