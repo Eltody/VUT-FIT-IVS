@@ -25,8 +25,8 @@ Stanovené termíny:
 			
 Termíny:
 	Vypracovanie predbežného plánu projektu 16.3.
-	Základná štruktúra projektu    20.3.
-	Testy knihovna         23. 3.
+	Základná štruktúra projektu    18.3.
+	Testy knihovna         20. 3.
 	Mockups                25. 3.
 	Implementácia knihovny  28. 3.
 	Vytvorenie GUI          2. 4.
