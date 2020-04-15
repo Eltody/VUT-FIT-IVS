@@ -1,4 +1,4 @@
-# VUT FIT IVS Project 2
+# VUT FIT IVS Projekt 2
 Druhý projekt k predmetu Praktické aspekty vývoja software:
 Jednoduchá kalkulačka s GUI, manuálom, dokumentáciou, inštalátorom a vlastnou matematickou knižnicou.
 
