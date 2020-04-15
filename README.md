@@ -2,7 +2,7 @@
     <h1>Kalkulátor</h1>
     <p>VUT FIT IVS Projekt 2</p>
     <p>
-    <img src="screenshot.png">
+
     <br>
     </p>
 </div>
