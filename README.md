@@ -1,18 +1,19 @@
-# VUT FIT IVS Projekt 2
-Druhý projekt k predmetu Praktické aspekty vývoja software:
-Jednoduchá kalkulačka s GUI, manuálom, dokumentáciou, inštalátorom a vlastnou matematickou knižnicou.
+Prostredi
+---------
 
-## Viac o projekte
-Projekt je určený za účelom tímovej spolupráce, implementácie jednoduchého programu a celkového vytvárania software - plánovanie, programovanie, testovanie, ...
+Ubuntu 64bit
+Windows 64bit
 
-### Zadanie projektu
-Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace2019-20.html
+Autori
+------
 
-## Názov tímu:
-* **Slovenská (j)elita**
+Nazev tymu
+- xlogin01 jmeno prijmeni 
+- xlogin02 jmeno prijmeni 
+- xlogin03 jmeno prijmeni 
+- xlogin04 jmeno prijmeni 
 
-## Členovia tímu: 		
-* **Tomáš Zaťko (xzatko02)**
-* **Martin Rakús (xrakus04)**
-* **Patrik Jacola (xjacol00)**
-* **Monika Kubincová (xkubin24)**
+Licence
+-------
+
+Tento program je poskytovan...
