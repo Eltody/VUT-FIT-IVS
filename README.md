@@ -1,3 +1,12 @@
+<div align="center">
+    <h1>Kalkulátor</h1>
+    <p>BUT FIT - IVS Project 2</p>
+    <p>
+    <img src="screenshot.png">
+    <br>
+    </p>
+</div>
+
 # VUT FIT IVS Projekt 2
 Druhý projekt k predmetu Praktické aspekty vývoja software: Jednoduchá kalkulačka s GUI, manuálom, dokumentáciou, inštalátorom a vlastnou matematickou knižnicou.
 
