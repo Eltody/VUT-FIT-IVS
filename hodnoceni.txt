@@ -1,4 +1,4 @@
-xlogin01 100 (základ GUI a základní mat. operace)
-xlogin02 100 (pokročilé mat. operace)
-xlogin03 90 (profiling, instalátor)
-xlogin04 110 (testy, dokumentace)
+xzatko02 100 (matematická knižnica, užívateľský manuál,)
+xrakus04 100 (tvorba GUI, mockup)
+xjacol00 100 (makefile, )
+xkubin24 100 (dokumentácia projektu, )
