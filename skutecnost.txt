@@ -1,7 +1,6 @@
-
-
+--------------------------------------------
 Rozdiely medzi skutočnosťou a plánom:
-
+--------------------------------------------
 1. Nepodarilo sa nám dodržať plánované termíny, niektoré deadliny boli splnené až po pár dňoch.
 
 2. Rozdelenie úloh medzi jednotlivými členmi tímu nebolo striktne dodržiavané - pri neznalosti riešenia 
