@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Kalkulator</h1>
+    <h1>Kalkulátor</h1>
     <p>VUT FIT IVS Projekt 2</p>
     <p>
     <img src="screenshotKalkulator.png">
