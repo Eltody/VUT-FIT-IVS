@@ -12,7 +12,7 @@ Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace20
 Slovenská (j)elita
 
 ## Členovia tímu: 		
-xzatko02
-xrakus04
-xjacol00
-xkubin24
+* **Tomáš Zaťko (xzatko02)**
+* **Martin Rakús (xrakus04)**
+* **Patrik Jacola (xjacol00)**
+* **Monika Kubincová (xkubin24)**
