@@ -1,3 +1,11 @@
+<div align="center">
+    <h1>Meriones Calculator</h1>
+    <p>VUT FIT IVS Projekt 2</p>
+    <p>
+    <img src="screenshotKalkulator.png">
+    <br>
+    </p>
+</div>
 
 # IVS Projekt 2
 Druhý projekt k predmetu Praktické aspekty vývoja software: Jednoduchá kalkulačka s GUI, manuálom, dokumentáciou, inštalátorom a vlastnou matematickou knižnicou. 
