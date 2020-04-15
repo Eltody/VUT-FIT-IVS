@@ -1,4 +1,4 @@
-xzatko02 100 (matematická knižnica, užívateľský manuál,)
-xrakus04 100 (tvorba GUI, mockup)
-xjacol00 100 (makefile, )
+xzatko02 100 (matematická knižnica - základné a pokročilé operácie, užívateľský manuál, repozitár)
+xrakus04 100 (tvorba GUI, mockup, inštalátor)
+xjacol00 100 (makefile, testovanie funkčnosti)
 xkubin24 100 (dokumentácia projektu, )
