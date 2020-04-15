@@ -9,7 +9,7 @@ Projekt je určený za účelom tímovej spolupráce, implementácie jednoduché
 Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace2019-20.html
 
 ## Názov tímu:
-Slovenská (j)elita
+* **Slovenská (j)elita**
 
 ## Členovia tímu: 		
 * **Tomáš Zaťko (xzatko02)**
