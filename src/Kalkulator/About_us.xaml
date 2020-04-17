@@ -1,0 +1,39 @@
+﻿<!--**************************************************************
+ * Názov tímu: Slovenska (j)elita
+ *
+ * Autori projektu:    Tomáš Zaťko (xzatko02)
+ *            	       Martin Rakús (xrakus04)
+ *           		   Patrik Jacola (xjacol00)
+ *            		   Monika Kubincová (xkubin24)
+ **************************************************************/-->
+    
+<Window x:Class="Kalkulator.Calculator.About_us"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="Kalkulátor - About us" Height="374.667" Width="237.2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Kalkulator.png" Topmost="True" FontSize="20">
+    <Window.Background>
+        <ImageBrush ImageSource="Background.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox Margin="52,149,9.4,85.8" TextWrapping="Wrap" Text="Tomáš Zaťko&#xD;&#xA;Martin Rakús&#xD;&#xA;Patrik Jacola&#xD;&#xA;Monika Kubincová" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontStyle="Italic"/>
+        <Label Content="Kalkulátor" Margin="10,10,36.4,276.8" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Calculator" Margin="76,54,10.4,240.8" FontSize="30" FontStyle="Italic"/>
+        <Label Content="Authors:" Margin="10,118,129.4,189.8" FontWeight="Bold"/>
+        <Rectangle Margin="0,109,-76.6,231.8">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Margin="0,264,-76.6,76.8">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="GitHub" Margin="10,273,143.4,34.8" FontWeight="Bold"/>
+        <Label Content="Documentation" Margin="76,298,10.4,9.8" FontStyle="Italic"/>
+    </Grid>
+</Window>
