@@ -1,0 +1,2 @@
+C:\Users\marti\source\repos\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
+C:\Users\marti\source\repos\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
