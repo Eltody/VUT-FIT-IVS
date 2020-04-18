@@ -13,7 +13,7 @@ using System.Windows.Controls;
 namespace Kalkulator.Calculator
 {
 	/// <summary>
-	///     Math operations processor.
+	/// Procesor pre mat. logiku
 	/// </summary>
 	public class MathProcessor
 	{
@@ -31,7 +31,7 @@ namespace Kalkulator.Calculator
 			Log
 		}
 
-		/// Result of calculation.
+		/// Výsledok výpočtu
 		private static double result;
 
 		/// Selected math operator.
@@ -57,7 +57,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Clear result.
+		/// Vyčisti výsledok
 		/// </summary>
 		public static void ClearResult()
 		{
@@ -67,7 +67,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Add operation.
+		/// Operácia sčítanie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessAdd(double ans)
@@ -78,7 +78,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Substract operation.
+		/// Operácia odčítanie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessSubstract(double ans)
@@ -89,7 +89,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Multiply operation.
+		/// Operácia násobenie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessMultiply(double ans)
@@ -100,7 +100,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Divide operation.
+		/// Operácia delenie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessDivide(double ans)
@@ -111,7 +111,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Fact operation.
+		/// Operácia faktoriál
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessFact(double ans)
@@ -123,7 +123,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Pow operation.
+		/// Operácia umocnenie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessPow(double ans)
@@ -134,7 +134,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Root operation.
+		/// Operácia odmocnenie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessRoot(double ans)
@@ -145,7 +145,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Process Log operation.
+		/// Operácia logaritmus
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		public void ProcessLog(double ans)
@@ -156,7 +156,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Calculate result.
+		/// Výpočet výsledku operácie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		/// <param name="waitingForNumber">Set to MathProcessor.WaitingForNumber after calculation.</param>
