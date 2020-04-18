@@ -7,10 +7,6 @@
  *            	       Martin Rakús (xrakus04)
  *           		   Patrik Jacola (xjacol00)
  *            		   Monika Kubincová (xkubin24)
- *
- * Dátum: 	  2.4. 2020
- *
- * Verzia: 	  1.0
  **************************************************************/
 
 using System;
@@ -18,8 +14,7 @@ using System;
 namespace Kalkulator.Calculator.Math
 {
 	/// <summary>
-	/// Implementácia matematických funkcií v DMath
-	/// <see cref="DMath"/>
+	/// Implementácia matematickej knižnice
 	/// </summary>
 	public class Math : DMath
 	{
@@ -64,14 +59,14 @@ namespace Kalkulator.Calculator.Math
 				throw new ArgumentOutOfRangeException();
 			}
 			ulong result = (ulong) a;
-			ulong numLong = result;
-			if (numLong == 0)
+			ulong lowerNum = result;
+			if (lowerNum == 0)
 			{
 				return 1;
 			}
-			for (ulong i = 1; i < numLong; i++)
+			for (ulong i = 1; i < lowerNum; i++)
 			{
-				result = result * (numLong - i);
+				result = result * (lowerNum - i);
 			}
 			return result;
 		}		
