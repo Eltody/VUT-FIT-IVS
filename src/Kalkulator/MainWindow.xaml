@@ -14,9 +14,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kalkulator"
         mc:Ignorable="d"
-        Title="Kalkulátor" Height="440" Width="356.4" Icon="Kalkulator.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" FontSize="25" FontWeight="Bold" KeyDown="Window_KeyDown">
+        Title="(j)Elitná kalkulačka" Height="440" Width="356.4" Icon="icon.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" FontSize="25" FontWeight="Bold" KeyDown="Window_KeyDown">
     <Window.Background>
-        <ImageBrush ImageSource="Background.jpg" Stretch="UniformToFill"/>
+        <ImageBrush ImageSource="background.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid Margin="0,140,0.4,0.4">
         <Grid.ColumnDefinitions>
@@ -61,7 +61,7 @@
                 </TextBox.Background>
             </TextBox>
         </Grid>
-        <Button x:Name="backspace" Content="⌫" Margin="0" Foreground="White" FontWeight="Normal" Click="backspace_click">
+        <Button x:Name="backspace" Content="⌫" Margin="0" Foreground="White" FontWeight="Normal" Click="backspace_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -69,7 +69,7 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="clear" Content="C" Margin="0" Grid.Column="1" Foreground="White" FontWeight="Normal" Click="clear_click">
+        <Button x:Name="clear" Content="C" Margin="0" Grid.Column="1" Foreground="White" FontWeight="Normal" Click="clear_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -77,24 +77,16 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="about" Margin="0" Grid.Column="2" Foreground="White" Click="about_us">
+        <Button x:Name="about" Margin="0" Grid.Column="2" Foreground="White" Click="about_us" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
             <Button.Background>
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
-            <Image Height="30" Width="21" Source="group.png"/>
+            <Image Height="30" Width="21" Source="about_us.png"/>
         </Button>
-        <Button x:Name="plus" Content="+" Margin="0" Grid.Column="3" Foreground="White" FontWeight="Normal" Click="plus_click">
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="multiply" Content="*" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="2" FontWeight="Normal" Click="multiply_click">
+        <Button x:Name="plus" Content="+" Margin="0" Grid.Column="3" Foreground="White" FontWeight="Normal" Click="plus_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -102,7 +94,7 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="divide" Content="/" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="3" FontWeight="Normal" Click="divide_click">
+        <Button x:Name="multiply" Content="*" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="2" FontWeight="Normal" Click="multiply_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -110,7 +102,7 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="minus" Content="-" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="1" FontWeight="Normal" Click="minus_click">
+        <Button x:Name="divide" Content="/" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="3" FontWeight="Normal" Click="divide_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -118,7 +110,15 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="exponent" Grid.Column="4" Margin="0" Foreground="White" Click="exponent_click">
+        <Button x:Name="minus" Content="-" Margin="0" Grid.Column="3" Foreground="White" Grid.Row="1" FontWeight="Normal" Click="minus_click" Focusable="False">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="exponent" Grid.Column="4" Margin="0" Foreground="White" Click="exponent_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -127,7 +127,7 @@
             </Button.Background>
             <TextBlock FontWeight="Normal"><Run Text="x"/><Run BaselineAlignment="Superscript" FontSize="20" Text=" "/><Run BaselineAlignment="Superscript" FontStyle="Italic" FontSize="20" Text="y"/></TextBlock>
         </Button>
-        <Button x:Name="six" Content="6" Margin="0" Grid.Column="2" Grid.Row="2" Click="number_click">
+        <Button x:Name="six" Content="6" Margin="0" Grid.Column="2" Grid.Row="2" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -138,7 +138,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="three" Content="3" Margin="0" Grid.Column="2" Grid.Row="3" Click="number_click">
+        <Button x:Name="three" Content="3" Margin="0" Grid.Column="2" Grid.Row="3" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -149,7 +149,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="nine" Content="9" Margin="0" Grid.Column="2" Grid.Row="1" Click="number_click">
+        <Button x:Name="nine" Content="9" Margin="0" Grid.Column="2" Grid.Row="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -160,7 +160,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="seven" Content="7" Margin="0" Grid.Row="1" Click="number_click">
+        <Button x:Name="seven" Content="7" Margin="0" Grid.Row="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -171,7 +171,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="eight" Content="8" Margin="0" Grid.Row="1" Grid.Column="1" Click="number_click">
+        <Button x:Name="eight" Content="8" Margin="0" Grid.Row="1" Grid.Column="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -182,7 +182,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="four" Content="4" Margin="0" Grid.Row="2" Click="number_click">
+        <Button x:Name="four" Content="4" Margin="0" Grid.Row="2" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -193,7 +193,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="five" Content="5" Margin="0" Grid.Row="2" Grid.Column="1" Click="number_click">
+        <Button x:Name="five" Content="5" Margin="0" Grid.Row="2" Grid.Column="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -204,7 +204,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="one" Content="1" Margin="0" Grid.Row="3" Click="number_click">
+        <Button x:Name="one" Content="1" Margin="0" Grid.Row="3" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -215,7 +215,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="two" Content="2" Margin="0" Grid.Row="3" Grid.Column="1" Click="number_click">
+        <Button x:Name="two" Content="2" Margin="0" Grid.Row="3" Grid.Column="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -226,7 +226,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="root" Grid.Column="4" Margin="0" Grid.Row="1" Foreground="White" Click="root_click">
+        <Button x:Name="root" Grid.Column="4" Margin="0" Grid.Row="1" Foreground="White" Click="root_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -235,7 +235,7 @@
             </Button.Background>
             <TextBlock FontWeight="Normal"><Run BaselineAlignment="Superscript" FontStyle="Italic" FontSize="20" Text="y"/><Run Text="√"/><Run FontSize="28" Text="x"/></TextBlock>
         </Button>
-        <Button x:Name="logarythm" Grid.Column="4" Margin="0" Grid.Row="2" Foreground="White" Click="logarythm_click">
+        <Button x:Name="logarythm" Grid.Column="4" Margin="0" Grid.Row="2" Foreground="White" Click="logarythm_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -244,7 +244,7 @@
             </Button.Background>
             <TextBlock FontWeight="Normal"><Run Text="log"/><Run BaselineAlignment="Subscript" FontStyle="Italic" FontSize="20" Text="y"/><Run FontSize="26" Text="x"/></TextBlock>
         </Button>
-        <Button x:Name="factorial" Content="x!" Grid.Column="4" Margin="0" Grid.Row="3" Foreground="White" FontWeight="Normal" Click="factorial_click">
+        <Button x:Name="factorial" Content="x!" Grid.Column="4" Margin="0" Grid.Row="3" Foreground="White" FontWeight="Normal" Click="factorial_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -252,7 +252,7 @@
                 <SolidColorBrush Color="#FF00AEEF" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="negation" Content="+/-" Margin="0" Foreground="White" Grid.Row="4" FontWeight="Normal" Click="negation_click">
+        <Button x:Name="negation" Content="+/-" Margin="0" Foreground="White" Grid.Row="4" FontWeight="Normal" Click="negation_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -260,7 +260,7 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="zero" Content="0" Margin="0" Grid.Row="4" Grid.Column="1" Click="number_click">
+        <Button x:Name="zero" Content="0" Margin="0" Grid.Row="4" Grid.Column="1" Click="number_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -271,7 +271,7 @@
                 <SolidColorBrush Color="White" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="dot" Content="." Margin="0" Foreground="White" Grid.Row="4" Grid.Column="2" FontWeight="Bold" Click="comma_click">
+        <Button x:Name="dot" Content="." Margin="0" Foreground="White" Grid.Row="4" Grid.Column="2" FontWeight="Bold" Click="comma_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
@@ -279,7 +279,7 @@
                 <SolidColorBrush Color="#FF595959" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="equal" Content="=" Grid.Column="3" Margin="0" Grid.Row="4" Grid.ColumnSpan="2" Foreground="White" FontWeight="Normal" Click="enter_click">
+        <Button x:Name="equal" Content="=" Grid.Column="3" Margin="0" Grid.Row="4" Grid.ColumnSpan="2" Foreground="White" FontWeight="Normal" Click="enter_click" Focusable="False">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FFC1C1C1" Opacity="0.4"/>
             </Button.BorderBrush>
