@@ -15,17 +15,17 @@ using System.Windows.Controls;
 namespace Kalkulator.Calculator
 {
 	/// <summary>
-	///     Output result processor.
+	/// Procesor pre výstup
 	/// </summary>
 	public class OutputProcessor
 	{
-		/// Maximum number of chars in text_display.
+		/// Maximálny počet znakov vypísaných na displeji
 		private const int TextAnsMaxLength = 20;
 		/// Limit for basic font size for text_display, then then reduced.
 		private const int TextAnsBasicFontLimit = 14;
-		/// Basic font size for text_display.
+		/// Veľkosť písma v displeji
 		private const double TextAnsBasicFontSize = 42.0;
-		/// Constant for reduction of font size of text_display.
+		/// Konštanta pre redukciu veľkosti písma na displeji
 		private const double TextAnsValueOfFontSizeReduction = 2.5;
 
 		/// Culture.
@@ -37,7 +37,7 @@ namespace Kalkulator.Calculator
 		/// log_display TextBox.
 		private readonly TextBox log_display;
 
-		/// Indicates whether the result is displayed.
+		/// Vypísaný výsledok na displeji = true
 		public bool IsAnswer = true;
 
 		/// Indicates whether the memory operator is used.
@@ -107,7 +107,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Print decimal separator (comma).
+		/// Výpis desatinnej čiarky
 		/// </summary>
 		public void PrintComma()
 		{
@@ -125,7 +125,7 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Invert Ans value.
+		/// Funkcia pre invertovanie Ans
 		/// </summary>
 		public void InvertAns()
 		{
