@@ -7,10 +7,6 @@
  *            	       Martin Rakús (xrakus04)
  *           		   Patrik Jacola (xjacol00)
  *            		   Monika Kubincová (xkubin24)
- *
- * Dátum: 	  2.4. 2020
- *
- * Verzia: 	  1.0
  **************************************************************/
 
 using System;
@@ -23,71 +19,66 @@ namespace Kalkulator.Calculator.Math
 	public interface DMath
 	{
 		/// <summary>
-		///     Sums two numbers.
+		/// Sčíta dve čísla
 		/// </summary>
-		/// <param name="num1">Summand1.</param>
-		/// <param name="num2">Summand2.</param>
-		/// <returns>The result of the addition.</returns>
+		/// <param name="a">Sčítanec</param>
+		/// <param name="b">Sčítanec</param>
+		/// <returns>Výsledok sčítania</returns>
 		double Add(double a, double b);
 
 		/// <summary>
-		///     Substracts two numbers.
+		/// Odčíta dve čísla
 		/// </summary>
-		/// <param name="minuend">Minuend.</param>
-		/// <param name="subtrahend">Subtrahend.</param>
-		/// <returns>The result of the substraction.</returns>
+		/// <param name="a">Menšenec</param>
+		/// <param name="b">Menšiteľ</param>
+		/// <returns>Výsledok odčítania</returns>
 		double Substract(double a, double b);
-
+		
 		/// <summary>
-		///     Divides two numbers.
+		/// Vynásobi dve čísla
 		/// </summary>
-		/// <param name="divident">Divident.</param>
-		/// <param name="divisor">Divisor.</param>
-		/// <returns>The result of the division.</returns>
-		/// <exception cref="DivideByZeroException"></exception>
-		double Divide(double a, double b);
-
-		/// <summary>
-		///     Multiplies two numbers.
-		/// </summary>
-		/// <param name="num1">Factor1.</param>
-		/// <param name="num2">Factor2.</param>
-		/// <returns>The summary of the Multiplication.</returns>
+		/// <param name="num1">Činiteľ</param>
+		/// <param name="num2">Činiteľ</param>
+		/// <returns>Výsledok násobenia</returns>
 		double Multiply(double a, double b);
 
 		/// <summary>
-		///     Computes a factorial from a number.
+		/// Vydelí dve čísla
 		/// </summary>
-		/// <param name="num">Factoriated number.</param>
-		/// <returns>Factorial from the number.</returns>
-		/// <exception cref="ArgumentOutOfRangeException"></exception>
+		/// <param name="a">Delenec</param>
+		/// <param name="b">Deliteľ</param>
+		/// <returns>Výsledok delenia</returns>
+		double Divide(double a, double b);
+		
+		/// <summary>
+		/// Vypočita logaritmus čísla o zadanom základe
+		/// </summary>
+		/// <param name="a">Základ</param>
+		/// <param name="b">Číslo na zlogaritmovanie</param>
+		/// <returns>Výsledok po zlogaritmovaní</returns>
+		double Log(double a, double b);
+
+		/// <summary>
+		/// Vypočíta faktoriál čísla
+		/// </summary>
+		/// <param name="a">Faktorizované číslo</param>
+		/// <returns>Faktoriál čísla</returns>
 		ulong Fact(double a);
 
 		/// <summary>
-		///     Exponentiation with general exponent.
+		/// Umocní číslo na zadaný exponent
 		/// </summary>
-		/// <param name="basis">Base.</param>
-		/// <param name="exponent">Exponent.</param>
-		/// <returns>Returns a specified number raised to the specified power.</returns>
-		/// <exception cref="NotFiniteNumberException"></exception>
+		/// <param name="a">Mocnenec</param>
+		/// <param name="b">Exponent</param>
+		/// <returns>Výsledok do umocnení</returns>
 		double Pow(double a, double b);
 
 		/// <summary>
-		///     Root with general degree.
+		/// Vypočíta zadanú odmocninu čísla
 		/// </summary>
-		/// <param name="radicand">Radicand.</param>
-		/// <param name="degree">Degree.</param>
-		/// <returns>Returns the n-th root of a specified number.</returns>
-		/// <exception cref="DivideByZeroException"></exception>
+		/// <param name="a"></param>
+		/// <param name="b">Degree.</param>
+		/// <returns>Výsledok po odmocnení</returns>
 		double Root(double a, double b);
-
-		/// <summary>
-		///     Logarithm with general base.
-		/// </summary>
-		/// <param name="basis">Base.</param>
-		/// <param name="antilogarithm">Antilogarithm.</param>
-		/// <returns>Returns the logarithm of a specified number in a specified base.</returns>
-		/// <exception cref="NotFiniteNumberException"></exception>
-		double Log(double a, double b);
 	}
 }
