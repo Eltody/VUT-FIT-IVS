@@ -1,2 +1,19 @@
 C:\Users\marti\source\repos\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
 C:\Users\marti\source\repos\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Tests.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Tests.pdb
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Kalkulator.exe
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Kalkulator.pdb
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Kalkulator.exe.config
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\obj\Debug\Tests.csproj.CopyComplete
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\obj\Debug\Tests.dll
+D:\Studijni opory\2.semester\IVS\proj_zatko_2\Kalkulator 2.1\VUT_FIT_IVS_proj2-Prototype\src\Tests\obj\Debug\Tests.pdb
