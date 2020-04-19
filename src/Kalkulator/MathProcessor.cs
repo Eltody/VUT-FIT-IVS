@@ -31,39 +31,29 @@ namespace Kalkulator.Calculator
 			Log
 		}
 
+		/// Zvolený operátor
+		private static Operator selectedOperator = Operator.None;
+
+		/// Matematická knižnica
+		private readonly Math.Math math;
+
+		/// Output procesor
+		private readonly OutputProcessor outputProcessor;
+		
+		/// Waiting for next number flag (if true, then skip calculation).
+		public static bool WaitingForNumber;
+		
 		/// Výsledok výpočtu
 		private static double result;
 
-		/// Selected math operator.
-		private static Operator selectedOperator = Operator.None;
-
-		/// Waiting for next number flag (if true, then skip calculation).
-		public static bool WaitingForNumber;
-
-		/// Disassembler marh library.
-		private readonly Math.Math math;
-
-		/// Output result processor.
-		private readonly OutputProcessor outputProcessor;
-
 		/// <summary>
-		///     MathProcessor construct.
+		/// Math procesor
 		/// </summary>
-		/// <param name="outputProcessor">Output result processor.</param>
+		/// <param name="outputProcessor">Output result procesor</param>
 		public MathProcessor(OutputProcessor outputProcessor)
 		{
 			this.outputProcessor = outputProcessor;
 			this.math = new Math.Math();
-		}
-
-		/// <summary>
-		/// Vyčisti výsledok
-		/// </summary>
-		public static void ClearResult()
-		{
-			result = 0.0;
-			selectedOperator = Operator.None;
-			WaitingForNumber = false;
 		}
 
 		/// <summary>
@@ -154,13 +144,23 @@ namespace Kalkulator.Calculator
 			this.CalculateResult(ans);
 			selectedOperator = Operator.Log;
 		}
+		
+		/// <summary>
+		/// Vyčisti výsledok
+		/// </summary>
+		public static void ClearResult()
+		{
+			result = 0.0;
+			selectedOperator = Operator.None;
+			WaitingForNumber = false;
+		}
 
 		/// <summary>
 		/// Výpočet výsledku operácie
 		/// </summary>
 		/// <param name="ans">Answer in double.</param>
 		/// <param name="waitingForNumber">Set to MathProcessor.WaitingForNumber after calculation.</param>
-		/// <param name="clear">Clear result and log after calculation.</param>
+		/// <param name="clear">Po výpočte vyčisti displejové okná</param>
 		public void CalculateResult(double ans, bool waitingForNumber = true, bool clear = false)
 		{
 			// if waiting for next number, then do not calculate result

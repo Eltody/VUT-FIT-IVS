@@ -8,9 +8,9 @@
 **************************************************************/
 
 using System;
-using System.Globalization;
-using System.Linq;
 using System.Windows.Controls;
+using System.Linq;
+using System.Globalization;
 
 namespace Kalkulator.Calculator
 {
@@ -23,28 +23,28 @@ namespace Kalkulator.Calculator
 		private const int TextAnsMaxLength = 20;
 		/// Limit for basic font size for text_display, then then reduced.
 		private const int TextAnsBasicFontLimit = 14;
-		/// Veľkosť písma v displeji
-		private const double TextAnsBasicFontSize = 42.0;
 		/// Konštanta pre redukciu veľkosti písma na displeji
 		private const double TextAnsValueOfFontSizeReduction = 2.5;
+		/// Veľkosť písma v displeji
+		private const double TextAnsBasicFontSize = 42.0;
 
 		/// Culture.
 		private const string Culture = "cs-CZ";
 
-		/// text_display TextBox.
-		private readonly TextBox text_display;
-
 		/// log_display TextBox.
 		private readonly TextBox log_display;
+		
+		/// text_display TextBox.
+		private readonly TextBox text_display;
 
 		/// Vypísaný výsledok na displeji = true
 		public bool IsAnswer = true;
 
-		/// Indicates whether the memory operator is used.
-		public bool IsMemoryOperator = true;
-
 		/// Indicates whether the result is displayed in log (eg. factorial).
 		public bool ResultInLog;
+		
+		/// Indicates whether the memory operator is used.
+		public bool IsMemoryOperator = true;
 
 		/// <summary>
 		///     OutputProcessor construct.
@@ -145,9 +145,9 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Print answer.
+		/// Vypíš odpoveď
 		/// </summary>
-		/// <param name="answer">Answer in double format.</param>
+		/// <param name="answer">Odpoveď</param>
 		public void PrintAns(double answer)
 		{
 			this.text_display.Text = this.FormatNumericValue(answer);
@@ -189,16 +189,6 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Prints error message to text answer.
-		/// </summary>
-		public void PrintError()
-		{
-			this.text_display.Text = "Error";
-			this.FixAnsFontSize();
-			this.IsAnswer = true;
-		}
-
-		/// <summary>
 		///     Clear log.
 		/// </summary>
 		public void ClearLog()
@@ -214,6 +204,16 @@ namespace Kalkulator.Calculator
 			this.text_display.Text = "0";
 			this.IsAnswer = false;
 			this.text_display.FontSize = TextAnsBasicFontSize;
+		}
+		
+		/// <summary>
+		/// Výpis erroru na  text_display
+		/// </summary>
+		public void PrintError()
+		{
+			this.text_display.Text = "Error";
+			this.FixAnsFontSize();
+			this.IsAnswer = true;
 		}
 
 		/// <summary>
