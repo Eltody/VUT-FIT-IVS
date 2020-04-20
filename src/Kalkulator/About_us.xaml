@@ -50,7 +50,7 @@
         </TextBlock>
         <TextBlock TextWrapping="Wrap" Foreground="Black"
 						FontSize="20" Grid.Row="4" Margin="0,13,9.6,0" FontWeight="Bold" TextAlignment="Center" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="147">
-				<Hyperlink RequestNavigate="documentation_click" NavigateUri="https://github.com/Eltody/VUT_FIT_IVS_proj2/blob/Prototype/dokumentace.pdf" Foreground="Black">
+				<Hyperlink RequestNavigate="documentation_click" NavigateUri="https://github.com/Eltody/VUT_FIT_IVS_proj2/blob/master/src/dokumentace.pdf" Foreground="Black">
 					<Run Text="Documentation" />
 				</Hyperlink>
         </TextBlock>
@@ -58,6 +58,12 @@
 						FontSize="20" Grid.Row="4" Margin="10,13,0,0" FontWeight="Bold" TextAlignment="Center" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70">
 				<Hyperlink RequestNavigate="github_click" NavigateUri="https://github.com/Eltody/VUT_FIT_IVS_proj2" Foreground="Black">
 					<Run Text="GitHub" />
+				</Hyperlink>
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Foreground="Black"
+						FontSize="20" Grid.Row="4" Margin="101,13,0,0" FontWeight="Bold" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="71" TextAlignment="Center">
+				<Hyperlink RequestNavigate="manual_click" NavigateUri="https://github.com/Eltody/VUT_FIT_IVS_proj2/blob/master/src/Kalkulator/README.txt" Foreground="Black">
+					<Run Text="Manual" />
 				</Hyperlink>
         </TextBlock>
     </Grid>
