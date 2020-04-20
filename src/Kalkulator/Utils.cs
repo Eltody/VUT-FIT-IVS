@@ -1,5 +1,5 @@
 /**************************************************************
-* Názov tímu: Slovenska(j)elita
+* Názov tímu: Slovenská (j)elita
 *
 * Autori projektu:      Tomáš Zaťko(xzatko02)
 *                       Martin Rakús(xrakus04)
@@ -15,14 +15,14 @@ using System.Windows.Input;
 namespace Kalkulator.Calculator
 {
 	/// <summary>
-	///     Static helpers.
+	/// Užitočné funkcie
 	/// </summary>
 	public static class Utils
 	{
 		/// <summary>
-		///     Checks whether given key is numeric.
+		/// Kontrola, či je zvolené tlačítko číslo
 		/// </summary>
-		/// <param name="key">Key object.</param>
+		/// <param name="key">Key object</param>
 		/// <returns></returns>
 		public static bool IsNumericKey(Key key)
 		{
@@ -30,21 +30,21 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Remove spaces from given string.
+		/// Odstránenie medzier zo zadaného stringu
 		/// </summary>
-		/// <param name="s">String to remove spaces.</param>
-		/// <returns>Given string without spaces.</returns>
+		/// <param name="s">String pre odstránenie medzier</param>
+		/// <returns>Zadaný string bez medzier</returns>
 		public static string RemoveSpaces(string s)
 		{
 			return Regex.Replace(s, @"\s", "");
 		}
 
 		/// <summary>
-		///     Remove geven chars from string.
+		/// Odstránenie zadaných znakov zo stringu
 		/// </summary>
-		/// <param name="s">String to remove given chars.</param>
-		/// <param name="chars">Chars to be removed.</param>
-		/// <returns>Given string without specified chars.</returns>
+		/// <param name="s">String, z ktorého budú znaky vymazané</param>
+		/// <param name="chars">Znaky pre vymazanie</param>
+		/// <returns>Zadaný string bez konkrétnych znakov</returns>
 		public static string RemoveChars(string s, IEnumerable<char> chars)
 		{
 			return chars.Aggregate(s, (current, c) => current.Replace(c.ToString(), string.Empty));

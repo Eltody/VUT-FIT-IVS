@@ -1,7 +1,7 @@
 /**************************************************************
- * Matematická knižnica pre 2. projekt IVS - Kalkulačka
+ * Matematická knižnica (prehľad funkcií) pre 2. projekt IVS - Kalkulačka
  *
- * Názov tímu: Slovenska (j)elita
+ * Názov tímu: Slovenská (j)elita
  *
  * Autori projektu:    Tomáš Zaťko (xzatko02)
  *            	       Martin Rakús (xrakus04)
@@ -14,7 +14,7 @@ using System;
 namespace Kalkulator.Calculator.Math
 {
 	/// <summary>
-	/// Prehlad a popis matematických funkcií použitých pri implementácií
+	/// Prehľad a popis matematických funkcií použitých pri implementácií
 	/// </summary>
 	public interface DMath
 	{
@@ -51,7 +51,7 @@ namespace Kalkulator.Calculator.Math
 		double Divide(double a, double b);
 		
 		/// <summary>
-		/// Vypočita logaritmus čísla o zadanom základe
+		/// Vypočíta logaritmus čísla o zadanom základe
 		/// </summary>
 		/// <param name="a">Základ</param>
 		/// <param name="b">Číslo na zlogaritmovanie</param>

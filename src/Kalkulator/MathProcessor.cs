@@ -1,5 +1,5 @@
 /**************************************************************
-* Názov tímu: Slovenska(j)elita
+* Názov tímu: Slovenská (j)elita
 *
 * Autori projektu:      Tomáš Zaťko(xzatko02)
 *                       Martin Rakús(xrakus04)

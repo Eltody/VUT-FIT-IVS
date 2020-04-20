@@ -1,5 +1,5 @@
 /**************************************************************
-* Názov tímu: Slovenska(j)elita
+* Názov tímu: Slovenská (j)elita
 *
 * Autori projektu:      Tomáš Zaťko(xzatko02)
 *                       Martin Rakús(xrakus04)
@@ -34,13 +34,13 @@ namespace Kalkulator.Calculator
 		/// Veľkosť písma v displeji
 		private const double TextFontSize = 42.0;
 
-		/// Jazyk.
+		/// Jazyk
 		private const string lang = "sk-SK";
 
-		/// log_display TextBox.
+		/// log_display TextBox
 		private readonly TextBox log_display;
 		
-		/// text_display TextBox.
+		/// text_display TextBox
 		private readonly TextBox text_display;
 
 		/// Vypísaný výsledok na hlavnom displeji = true

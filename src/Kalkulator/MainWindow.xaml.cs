@@ -1,5 +1,5 @@
 ﻿/**************************************************************
-* Názov tímu: Slovenska(j)elita
+* Názov tímu: Slovenská (j)elita
 *
 * Autori projektu:      Tomáš Zaťko(xzatko02)
 *                       Martin Rakús(xrakus04)
@@ -26,17 +26,17 @@ namespace Kalkulator.Calculator
 {
     
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// MainWindow.xaml - GUI kód
     /// </summary>
     public partial class MainWindow : Window
     {
         /// TextLog scroll offsset.
         private const double TextLogScrollOffset = 15.0;
 
-        /// Math operations processor.
+        /// Math procesor
         private readonly MathProcessor mathProcessor;
 
-        /// Output result processor.
+        /// Output procesor
         private readonly OutputProcessor outputProcessor;
 
         public MainWindow()
@@ -141,70 +141,70 @@ namespace Kalkulator.Calculator
         }
 
         /// <summary>
-		///     Process pressed keys.
+		/// Spracovanie stlačených tlačítok
 		/// </summary>
-		/// <param name="sender">Sender object.</param>
-		/// <param name="e">KeyEventArgs.</param>
+		/// <param name="sender">Sender object</param>
+		/// <param name="e">KeyEventArgs</param>
 		private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             bool shiftPressed = (Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift;
 
-            // print number
+            // Vypíš číslo
             if (!shiftPressed && OutputProcessor.IsNumericKey(e.Key))
             {
                 KeyConverter keyConverter = new KeyConverter();
                 this.outputProcessor.PrintNumber(keyConverter.ConvertToString(e.Key));
             }
 
-            // print decimal separator (comma)
+            // Vypíš desatinnú čiarku
             if (!shiftPressed && (e.Key == Key.Decimal || e.Key == Key.OemComma || e.Key == Key.OemPeriod))
             {
                 this.outputProcessor.PrintComma();
             }
 
-            // calculate result
+            // Vypočítaj výsledok
             if (e.Key == Key.Enter || e.Key == Key.Return || !shiftPressed && e.Key == Key.OemPlus)
             {
                 this.mathProcessor.CalculateResult(this.GetNumericAns(), false, true);
             }
 
-            // remove last number
+            // Odstráň posledné číslo pomocou backspace
             if (e.Key == Key.Back)
             {
                 this.outputProcessor.Backspace();
             }
 
-            // sum
+            // Add
             if (e.Key == Key.Add || shiftPressed && e.Key == Key.OemPlus)
             {
                 this.mathProcessor.ProcessAdd(this.GetNumericAns());
             }
 
-            // sub
+            // Substract
             if (e.Key == Key.Subtract || !shiftPressed && e.Key == Key.OemMinus)
             {
                 this.mathProcessor.ProcessSubstract(this.GetNumericAns());
             }
 
-            // mult
+            // Multiply
             if (e.Key == Key.Multiply || shiftPressed && e.Key == Key.D8)
             {
                 this.mathProcessor.ProcessMultiply(this.GetNumericAns());
             }
 
-            // div
+            // Divide
             if (e.Key == Key.Divide || !shiftPressed && e.Key == Key.OemQuestion)
             {
                 this.mathProcessor.ProcessDivide(this.GetNumericAns());
             }
 
-            // fact
+            // Factorial (Fact)
             if (shiftPressed && e.Key == Key.D1)
             {
                 this.mathProcessor.ProcessFact(this.GetNumericAns());
             }
 
-            // pow
+            // Power (Pow)
             if (shiftPressed && e.Key == Key.D6)
             {
                 this.mathProcessor.ProcessPow(this.GetNumericAns());
@@ -213,9 +213,9 @@ namespace Kalkulator.Calculator
 
 
         /// <summary>
-		///     Get answer parsed double.
+		/// Získanie double výsledku (answer)
 		/// </summary>
-		/// <returns>Parsed answer to double.</returns>
+		/// <returns>Answer - typ double</returns>
         private double GetNumericAns()
         {
             double ans;
