@@ -283,10 +283,10 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Format numeric value in double format to czech number format.
+		/// Formátuje čísla do slovenského formátu
 		/// </summary>
-		/// <param name="value">Numeric value in double format to be formatted.</param>
-		/// <returns>Formated numeric value in string format.</returns>
+		/// <param name="value">Čísla na formátovanie vo formáte double</param>
+		/// <returns>Formátované čísla</returns>
 		private string FormatNumericValue(double value)
 		{
 			CultureInfo cultureInfo = new CultureInfo(lang);
