@@ -107,7 +107,7 @@ namespace Kalkulator.Calculator
 		public void ProcessFact(double ans)
 		{
 			this.outputProcessor.PrintLog("!");
-			this.outputProcessor.ResultInLog = true;
+			this.outputProcessor.IsTextDisplay = true;
 			this.CalculateResult(ans, false);
 			selectedOperator = Operator.Fact;
 		}
