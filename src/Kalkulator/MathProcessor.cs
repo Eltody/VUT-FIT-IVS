@@ -59,7 +59,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia sčítanie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessAdd(double ans)
 		{
 			this.outputProcessor.PrintLog("+");
@@ -70,7 +70,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia odčítanie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessSubstract(double ans)
 		{
 			this.outputProcessor.PrintLog("-");
@@ -81,7 +81,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia násobenie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessMultiply(double ans)
 		{
 			this.outputProcessor.PrintLog("*");
@@ -92,7 +92,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia delenie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessDivide(double ans)
 		{
 			this.outputProcessor.PrintLog("÷");
@@ -103,7 +103,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia faktoriál
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessFact(double ans)
 		{
 			this.outputProcessor.PrintLog("!");
@@ -115,7 +115,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia umocnenie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessPow(double ans)
 		{
 			this.outputProcessor.PrintLog("^");
@@ -126,7 +126,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia odmocnenie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessRoot(double ans)
 		{
 			this.outputProcessor.PrintLog("√");
@@ -137,7 +137,7 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Operácia logaritmus
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
 		public void ProcessLog(double ans)
 		{
 			this.outputProcessor.PrintLog("log");
@@ -158,17 +158,15 @@ namespace Kalkulator.Calculator
 		/// <summary>
 		/// Výpočet výsledku operácie
 		/// </summary>
-		/// <param name="ans">Answer in double.</param>
-		/// <param name="waitingForNumber">Set to MathProcessor.WaitingForNumber after calculation.</param>
+		/// <param name="ans">Answer - číslo typu double</param>
+		/// <param name="waitingForNumber">Očakáva sa ďalšie číslo</param>
 		/// <param name="clear">Po výpočte vyčisti displejové okná</param>
 		public void CalculateResult(double ans, bool waitingForNumber = true, bool clear = false)
 		{
-			// if waiting for next number, then do not calculate result
-			if (WaitingForNumber)
+			if (WaitingForNumber)	// pokiaľ sa čaká na výsledok - nepočíta sa výsledok (result)
 			{
 				return;
 			}
-
 			try
 			{
 				switch (selectedOperator)
@@ -219,10 +217,8 @@ namespace Kalkulator.Calculator
 
 				return;
 			}
-
 			this.outputProcessor.PrintAns(result);
 			WaitingForNumber = waitingForNumber;
-
 			if (clear)
 			{
 				this.outputProcessor.ClearLog();
