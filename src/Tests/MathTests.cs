@@ -1,16 +1,12 @@
 /********************************************************************************
  * Implementácia testov pre matematickú knižnicu pre 2. projekt IVS - Kalkulačka
  *
- * Názov tímu: Slovenska (j)elita
+ * Názov tímu: Slovenská (j)elita
  *
  * Autori projektu:    Tomáš Zaťko (xzatko02)
  *          		   Martin Rakús (xrakus04)
  *        	 	       Patrik Jacola (xjacol00)
  *          		   Monika Kubincová (xkubin24)
- *
- * Dátum: 	  7.4. 2020
- *
- * Verzia: 	  1.0
  ********************************************************************************/
 
 using System;
