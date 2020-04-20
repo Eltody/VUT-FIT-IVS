@@ -24,3 +24,6 @@ Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace20
 * **Martin Rakús (xrakus04)**
 * **Patrik Jacola (xjacol00)**
 * **Monika Kubincová (xkubin24)**
+
+## Zvolená platforma:
+Windows 10
