@@ -64,7 +64,6 @@
     <Compile Include="MathProcessor.cs" />
     <Compile Include="math\DMath.cs" />
     <Compile Include="math\Math.cs" />
-    <Compile Include="Utils.cs" />
     <Page Include="About_us.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

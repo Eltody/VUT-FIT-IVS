@@ -17,7 +17,7 @@ namespace Kalkulator.Calculator
 	/// </summary>
 	public class MathProcessor
 	{
-		/// Math operators.
+		/// Operátory
 		private enum Operator
 		{
 			None,
@@ -40,7 +40,7 @@ namespace Kalkulator.Calculator
 		/// Output procesor
 		private readonly OutputProcessor outputProcessor;
 		
-		/// Waiting for next number flag (if true, then skip calculation).
+		/// Očakáva ďalšie číslo
 		public static bool WaitingForNumber;
 		
 		/// Výsledok výpočtu
@@ -210,14 +210,14 @@ namespace Kalkulator.Calculator
 			}
 			catch (Exception)
 			{
-				this.outputProcessor.ClearAns();
+				this.outputProcessor.ClearText();
 				this.outputProcessor.ClearLog();
 				ClearResult();
 				this.outputProcessor.PrintError();
 
 				return;
 			}
-			this.outputProcessor.PrintAns(result);
+			this.outputProcessor.PrintText(result);
 			WaitingForNumber = waitingForNumber;
 			if (clear)
 			{

@@ -80,14 +80,14 @@ namespace Kalkulator.Calculator
 
         private void clear_click(object sender, RoutedEventArgs e)
         {
-            this.outputProcessor.ClearAns();
+            this.outputProcessor.ClearText();
             this.outputProcessor.ClearLog();
             MathProcessor.ClearResult();
         }
 
         private void negation_click(object sender, RoutedEventArgs e)
         {
-            this.outputProcessor.InvertAns();
+            this.outputProcessor.InvertNumber();
         }
 
         private void plus_click(object sender, RoutedEventArgs e)
@@ -150,7 +150,7 @@ namespace Kalkulator.Calculator
             bool shiftPressed = (Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift;
 
             // print number
-            if (!shiftPressed && Utils.IsNumericKey(e.Key))
+            if (!shiftPressed && OutputProcessor.IsNumericKey(e.Key))
             {
                 KeyConverter keyConverter = new KeyConverter();
                 this.outputProcessor.PrintNumber(keyConverter.ConvertToString(e.Key));

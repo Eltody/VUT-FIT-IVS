@@ -22,11 +22,8 @@ C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Tests.dll
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Tests.pdb
-C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Kalkulator.exe
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Kalkulator.pdb
-C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Kalkulator.exe.config
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
@@ -51,3 +48,6 @@ C:\Users\Eltody\Documents\GitHub\VUT_FIT_IVS_proj2\VUT_FIT_IVS_proj2\src\Tests\o
 C:\Users\Eltody\Documents\GitHub\VUT_FIT_IVS_proj2\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.csproj.CopyComplete
 C:\Users\Eltody\Documents\GitHub\VUT_FIT_IVS_proj2\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.dll
 C:\Users\Eltody\Documents\GitHub\VUT_FIT_IVS_proj2\VUT_FIT_IVS_proj2\src\Tests\obj\Debug\Tests.pdb
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\(j)Elitná kalkulačka.exe
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\(j)Elitná kalkulačka.pdb
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\Tests\bin\Debug\(j)Elitná kalkulačka.exe.config
