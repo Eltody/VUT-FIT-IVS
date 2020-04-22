@@ -76,8 +76,8 @@ namespace Kalkulator.Calculator.Math
 		/// <summary>
 		/// Vypočíta zadanú odmocninu čísla
 		/// </summary>
-		/// <param name="a"></param>
-		/// <param name="b">Degree.</param>
+		/// <param name="a">y-tá odmocnina</param>
+		/// <param name="b">Číslo pod odmocninou</param>
 		/// <returns>Výsledok po odmocnení</returns>
 		double Root(double a, double b);
 	}
