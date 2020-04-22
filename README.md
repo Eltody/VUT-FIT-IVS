@@ -27,3 +27,6 @@ Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace20
 
 ## Prostredie:
 Windows 64bit
+
+## License
+Tento program je poskytovaný s licenciou GNU GPL v.3.0 License.
