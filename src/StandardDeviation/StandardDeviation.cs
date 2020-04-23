@@ -62,7 +62,7 @@ namespace Kalkulator
 			List<double> nums = new List<double>();
 			string line;
 
-			while ((line = Console.ReadLine()) != "x")
+			while ((line = Console.ReadLine()) != null)
 			{
 				double number;
 				if (!double.TryParse(line.Replace(".", ","), out number))
