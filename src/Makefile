@@ -6,21 +6,19 @@
 
 # nastaveni promennych
 ROOT_DIR:=$(shell cd)\..
-VISUAL_STUDIO_PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
-MSBUILD=MSBuild\15.0\Bin\MSBuild.exe
+VISUAL_STUDIO_PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community
 
 PROJ_NAME=Calculator
-PROJ_DIR=$(ROOT_DIR)\src\$(PROJ_NAME)
-PROJ=$(PROJ_DIR)\bin\Release\$(PROJ_NAME).exe
+PROJ_DIR=$(ROOT_DIR)\src\Kalkulator
+PROJ="$(PROJ_DIR)\bin\Release\(j)Elitná kalkulačka.exe"
 PROJ_FILE=$(PROJ_DIR)\$(PROJ_NAME).csproj
 
-TESTS_NAME=CalculatorTests
-TESTS_DIR=$(ROOT_DIR)\src\$(TESTS_NAME)
+TESTS_DIR=$(ROOT_DIR)\src\Tests
 
-PROF_DIR_NAME=ConsoleApplication1
-PROF_NAME=Profiling
+PROF_DIR_NAME=StandardDeviation
+PROF_NAME=StandardDeviation
 PROF_DIR=$(ROOT_DIR)\src\$(PROF_DIR_NAME)
-PROF=$(PROF_DIR)\bin\Release\$(PROF_NAME).exe
+PROF=$(PROF_DIR)\bin\Debug\$(PROF_NAME).exe
 PROF_FILE=$(PROF_DIR)\$(PROF_NAME).csproj
 
 # promenne pro zabaleni archivu
@@ -39,7 +37,7 @@ INSTALLER_NAME=Setup
 INSTALLER_FILE=$(ROOT_DIR)\src\$(INSTALLER_NAME).exe
 
 # promenne a cesty pro profiling
-PROFILING_NAME=Profiling
+PROFILING_NAME=StandardDeviation
 PROFILING_DIR=$(ROOT_DIR)\src\$(PROFILING_NAME)
 
 .PHONY: all build pack clean doc run
@@ -81,7 +79,7 @@ pack: doc build
 
 ####### 6 profiling
 profile: <profiling_input.txt
-	cd $(PROF_DIR)\bin\Release
+	cd $(PROF_DIR)\bin\Debug
 	if not exist "$(PROF)" make build
 	$(PROF) $<
 
