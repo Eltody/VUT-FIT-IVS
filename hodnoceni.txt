@@ -1,4 +1,4 @@
 xzatko02 100 (matematická knižnica - základné a pokročilé operácie, užívateľský manuál, mat. testy, dokumentácia, profiling)
-xrakus04 100 (vytvorenie a naprogramovanie GUI, mockup - ďalšia verzia, inštalátor, profiling)
+xrakus04 100 (vytvorenie a naprogramovanie GUI, mockup - ďalšia verzia, inštalátor, profiling, makefile)
 xjacol00 100 (testovanie funkčnosti)
 xkubin24 100 (testovanie funkčnosti)
