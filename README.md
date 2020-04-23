@@ -24,3 +24,9 @@ Celkové zadanie projektu: http://ivs.fit.vutbr.cz/projekt-2_tymova_spoluprace20
 * **Martin Rakús (xrakus04)**
 * **Patrik Jacola (xjacol00)**
 * **Monika Kubincová (xkubin24)**
+
+## Prostredie:
+Windows 64bit
+
+## License
+Tento program je poskytovaný s licenciou GNU GPL v.3.0 License.

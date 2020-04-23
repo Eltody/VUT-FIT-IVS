@@ -1,0 +1,11 @@
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\obj\Debug\StandardDeviation.csproj.CoreCompileInputs.cache
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\obj\Debug\StandardDeviation.csprojAssemblyReference.cache
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\StandardDeviation.exe.config
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\StandardDeviation.exe
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\StandardDeviation.pdb
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\(j)Elitná kalkulačka.exe
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\(j)Elitná kalkulačka.pdb
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\bin\Debug\(j)Elitná kalkulačka.exe.config
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\obj\Debug\StandardDeviation.csproj.CopyComplete
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\obj\Debug\StandardDeviation.exe
+C:\Users\marti\Documents\GitHub\VUT_FIT_IVS_proj2\src\StandardDeviation\obj\Debug\StandardDeviation.pdb

@@ -1,5 +1,5 @@
 /**************************************************************
-* Názov tímu: Slovenska(j)elita
+* Názov tímu: Slovenská (j)elita
 *
 * Autori projektu:      Tomáš Zaťko(xzatko02)
 *                       Martin Rakús(xrakus04)
@@ -8,87 +8,86 @@
 **************************************************************/
 
 using System;
-using System.Globalization;
-using System.Linq;
 using System.Windows.Controls;
+using System.Linq;
+using System.Globalization;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Windows.Input;
 
 namespace Kalkulator.Calculator
 {
 	/// <summary>
-	///     Output result processor.
+	/// Procesor pre výstup
 	/// </summary>
 	public class OutputProcessor
 	{
-		/// Maximum number of chars in text_display.
-		private const int TextAnsMaxLength = 20;
-		/// Limit for basic font size for text_display, then then reduced.
-		private const int TextAnsBasicFontLimit = 14;
-		/// Basic font size for text_display.
-		private const double TextAnsBasicFontSize = 42.0;
-		/// Constant for reduction of font size of text_display.
-		private const double TextAnsValueOfFontSizeReduction = 2.5;
+		/// Maximálny počet znakov vypísaných na displeji
+		private const int TextMaxLength = 20;
 
-		/// Culture.
-		private const string Culture = "cs-CZ";
+		/// Maximálny počet znakov vypísaných na log displeji
+		private const int TextFontLength = 14;
 
-		/// text_display TextBox.
+		/// Konštanta pre redukciu veľkosti písma na displeji
+		private const double TextFontSizePercentage = 2.5;
+
+		/// Veľkosť písma v displeji
+		private const double TextFontSize = 42.0;
+
+		/// Jazyk
+		private const string lang = "sk-SK";
+
+		/// log_display TextBox
+		private readonly TextBox log_display;
+		
+		/// text_display TextBox
 		private readonly TextBox text_display;
 
-		/// log_display TextBox.
-		private readonly TextBox log_display;
+		/// Vypísaný výsledok na hlavnom displeji = true
+		public bool IsTextDisplay = true;
 
-		/// Indicates whether the result is displayed.
-		public bool IsAnswer = true;
-
-		/// Indicates whether the memory operator is used.
-		public bool IsMemoryOperator = true;
-
-		/// Indicates whether the result is displayed in log (eg. factorial).
-		public bool ResultInLog;
+		/// Vypísaný výsledok na log displeji = true
+		public bool IsLogDisplay;
 
 		/// <summary>
-		///     OutputProcessor construct.
+		/// Deklarácia displejov
 		/// </summary>
-		/// <param name="text_display">text_display TextBox.</param>
-		/// <param name="log_display">log_display TextBox.</param>
+		/// <param name="text_display">Dolný displej - zadávané čísla</param>
+		/// <param name="log_display">Horný displej - log výpočtov</param>
 		public OutputProcessor(TextBox text_display, TextBox log_display)
 		{
 			this.text_display = text_display;
 			this.log_display = log_display;
 
-			// + 2 becouse '-' and ',' char
-			this.text_display.MaxLength = TextAnsMaxLength + 2;
-			this.text_display.FontSize = TextAnsBasicFontSize;
+			this.text_display.MaxLength = TextMaxLength + 2; // maximálna dĺžka riadka + 2 (znaky "-" a ",")
+			this.text_display.FontSize = TextFontSize;	// veľkosť textu
 		}
 
 		/// <summary>
-		///     Print number to text_display TextBox in proper format.
+		/// Výpis čísel na textový displej / úprava formátu
 		/// </summary>
-		/// <param name="number">Pressed number in string format.</param>
-		/// <returns>True, if number was printed, false otherwise.</returns>
+		/// <param name="number">Zadané číslo vo formáte string</param>
+		/// <returns>True ak sa číslo vypísalo, false ak nie</returns>
 		public bool PrintNumber(string number)
 		{
-			// remove "NumPad" from converted string number if NumPad numbers are used
-			if (number.Contains("NumPad"))
+			if (number.Contains("NumPad"))	// V prípade zadávania čísel pomocou numerickej klávesnice odstráni NumPad
 			{
 				number = number.Remove(0, 6);
 			}
 
-			// if result is in log, then clear log
-			if (this.ResultInLog)
+			if (this.IsLogDisplay)	// pokiaľ sa výsledok zapíše do log displeju, vyčistí ho
 			{
 				this.ClearLog();
 				MathProcessor.ClearResult();
 			}
-			this.ResultInLog = false;
+			this.IsLogDisplay = false;
 
-			// max length was reached
-			if (this.text_display.Text.Length > TextAnsMaxLength && !this.IsAnswer)
+			if (this.text_display.Text.Length > TextMaxLength && !this.IsTextDisplay)   // kontrola počtu znakov
 			{
 				return false;
 			}
 
-			if (this.text_display.Text == "0" || this.IsAnswer || this.IsMemoryOperator)
+			if (this.text_display.Text == "0" || this.IsTextDisplay)
 			{
 				this.text_display.Text = number;
 			}
@@ -99,19 +98,18 @@ namespace Kalkulator.Calculator
 
 			this.text_display.Text = this.FormatNumericValue(this.text_display.Text);
 			this.FixAnsFontSize();
-			this.IsAnswer = false;
-			this.IsMemoryOperator = false;
+			this.IsTextDisplay = false;
 			MathProcessor.WaitingForNumber = false;
 
 			return true;
 		}
 
 		/// <summary>
-		///     Print decimal separator (comma).
+		/// Výpis desatinnej čiarky
 		/// </summary>
 		public void PrintComma()
 		{
-			if (this.IsAnswer)
+			if (this.IsTextDisplay)
 			{
 				this.text_display.Text = "0,";
 			}
@@ -120,16 +118,16 @@ namespace Kalkulator.Calculator
 				this.text_display.Text += ",";
 			}
 
-			this.IsAnswer = false;
+			this.IsTextDisplay = false;
 			MathProcessor.WaitingForNumber = false;
 		}
 
 		/// <summary>
-		///     Invert Ans value.
+		/// Funkcia pre invertovanie čísla
 		/// </summary>
-		public void InvertAns()
+		public void InvertNumber()
 		{
-			if (this.IsAnswer || this.IsAnsClear())
+			if (this.IsTextDisplay || this.IsTextClear())
 			{
 				return;
 			}
@@ -145,27 +143,27 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Print answer.
+		/// Výpis odpovede
 		/// </summary>
-		/// <param name="answer">Answer in double format.</param>
-		public void PrintAns(double answer)
+		/// <param name="answer">Odpoveď</param>
+		public void PrintText(double answer)
 		{
 			this.text_display.Text = this.FormatNumericValue(answer);
 			this.FixAnsFontSize();
-			if (!this.ResultInLog)
+			if (!this.IsLogDisplay)
 			{
-				this.IsAnswer = true;
+				this.IsTextDisplay = true;
 			}
 		}
 
 		/// <summary>
-		///     Print text log.
+		/// Výpis zadávaných čísel
 		/// </summary>
-		/// <param name="operation">Operation in string format.</param>
+		/// <param name="operation">Zadávané operácie</param>
 		public void PrintLog(string operation)
 		{
 			// change last operator
-			if (this.log_display.Text.Length != 0 && this.IsAnswer && !this.ResultInLog)
+			if (this.log_display.Text.Length != 0 && this.IsTextDisplay && !this.IsLogDisplay)
 			{
 				// remove last whitespace
 				this.log_display.Text = this.log_display.Text.Remove(this.log_display.Text.Length - 1);
@@ -179,27 +177,17 @@ namespace Kalkulator.Calculator
 				this.log_display.Text += " " + operation + " ";
 			}
 
-			if (!this.IsAnswer)
+			if (!this.IsTextDisplay)
 			{
-				this.log_display.Text += (this.ResultInLog ? "" : this.text_display.Text) + " " + operation + " ";
+				this.log_display.Text += (this.IsLogDisplay ? "" : this.text_display.Text) + " " + operation + " ";
 			}
 
 			this.log_display.ScrollToHorizontalOffset(this.log_display.Text.Length * this.log_display.FontSize);
-			this.ResultInLog = false;
+			this.IsLogDisplay = false;
 		}
 
 		/// <summary>
-		///     Prints error message to text answer.
-		/// </summary>
-		public void PrintError()
-		{
-			this.text_display.Text = "Error";
-			this.FixAnsFontSize();
-			this.IsAnswer = true;
-		}
-
-		/// <summary>
-		///     Clear log.
+		/// Vyčistí log displej
 		/// </summary>
 		public void ClearLog()
 		{
@@ -207,43 +195,52 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Clear answer.
+		/// Vyčistí text displej
 		/// </summary>
-		public void ClearAns()
+		public void ClearText()
 		{
 			this.text_display.Text = "0";
-			this.IsAnswer = false;
-			this.text_display.FontSize = TextAnsBasicFontSize;
+			this.IsTextDisplay = false;
+			this.text_display.FontSize = TextFontSize;
+		}
+		
+		/// <summary>
+		/// Výpis erroru na text displej
+		/// </summary>
+		public void PrintError()
+		{
+			this.text_display.Text = "Error";
+			this.FixAnsFontSize();
+			this.IsTextDisplay = true;
 		}
 
 		/// <summary>
-		///     Is answer clear?
+		/// Zisťuje či text displej obsahuje nejaké hodnoty
 		/// </summary>
-		/// <returns>True, if answer is clear, false otherwise.</returns>
-		private bool IsAnsClear()
+		/// <returns>True ak je prázdny, false ak nie</returns>
+		private bool IsTextClear()
 		{
 			return this.text_display.Text == "0";
 		}
 
 		/// <summary>
-		///     Remove last number.
+		/// Vymaže posledný znak
 		/// </summary>
 		public void Backspace()
 		{
-			if (this.IsAnswer || this.IsAnsClear())
+			if (this.IsTextDisplay || this.IsTextClear())
 			{
 				return;
 			}
 
 			if (this.text_display.Text.Length == 1 || this.text_display.Text.Length == 2 && this.text_display.Text.Contains("-"))
 			{
-				this.ClearAns();
+				this.ClearText();
 				return;
 			}
 
 			int removeLength = 1;
-			// if penultimate char is whitespace, then remove it too
-			if (string.IsNullOrWhiteSpace(this.text_display.Text.Substring(this.text_display.Text.Length - 2, 1)))
+			if (string.IsNullOrWhiteSpace(this.text_display.Text.Substring(this.text_display.Text.Length - 2, 1)))	// pokiaľ je pred odstraňovaným znakom medzera odstráni aj tú
 			{
 				removeLength++;
 			}
@@ -254,36 +251,31 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Format numeric value in string to czech number format.
+		/// Formátuje čísla do slovenského formátu
 		/// </summary>
-		/// <param name="value">Numeric value in string format to be formatted.</param>
-		/// <returns>Formated numeric value in string format.</returns>
+		/// <param name="value">Čísla na formátovanie</param>
+		/// <returns>Formátované čísla</returns>
 		private string FormatNumericValue(string value)
 		{
 			long numericValue;
 			string formatedValue;
-			CultureInfo cultureInfo = new CultureInfo(Culture);
-			value = Utils.RemoveSpaces(value);
+			CultureInfo cultureInfo = new CultureInfo(lang);
+			value = OutputProcessor.RemoveSpaces(value);
 			int indexOfDecPoint = value.IndexOf(",", StringComparison.Ordinal);
-			if (indexOfDecPoint == -1) // value isn't decimal
+			if (indexOfDecPoint == -1) // nedesatinná hodnota
 			{
-				// format number
 				long.TryParse(value, out numericValue);
 				formatedValue = numericValue.ToString("N", cultureInfo);
-				// remove decimal places
 				formatedValue = formatedValue.Remove(formatedValue.Length - 3);
 			}
-			else // value is decimal
+			else // desatinná hodnota
 			{
-				// format non decimal part of number
 				string integerPart = value.Substring(0, indexOfDecPoint);
 				long.TryParse(integerPart, out numericValue);
 				formatedValue = numericValue.ToString("N", cultureInfo);
-				// remove decimal places
 				formatedValue = formatedValue.Remove(formatedValue.Length - 3);
 
-				// format decimal part of number
-				string decimalPart = value.Substring(indexOfDecPoint, value.Length - integerPart.Length);
+				string decimalPart = value.Substring(indexOfDecPoint, value.Length - integerPart.Length);	// formátuje desatinnú časť čísla
 				formatedValue += decimalPart;
 			}
 
@@ -291,19 +283,19 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Format numeric value in double format to czech number format.
+		/// Formátuje čísla do slovenského formátu
 		/// </summary>
-		/// <param name="value">Numeric value in double format to be formatted.</param>
-		/// <returns>Formated numeric value in string format.</returns>
+		/// <param name="value">Čísla na formátovanie vo formáte double</param>
+		/// <returns>Formátované čísla</returns>
 		private string FormatNumericValue(double value)
 		{
-			CultureInfo cultureInfo = new CultureInfo(Culture);
+			CultureInfo cultureInfo = new CultureInfo(lang);
 			string formatedValue = value.ToString("R", cultureInfo);
 
 			// remove non numeric chars except spaces
-			int formatedValueLenght = Utils.RemoveChars(formatedValue, new[] {',', '-'}).Length;
+			int formatedValueLenght = OutputProcessor.RemoveChars(formatedValue, new[] {',', '-'}).Length;
 
-			formatedValue = formatedValueLenght > TextAnsMaxLength || formatedValue.Contains("E")
+			formatedValue = formatedValueLenght > TextMaxLength || formatedValue.Contains("E")
 				? value.ToString("g2", cultureInfo)
 				: this.FormatNumericValue(formatedValue);
 
@@ -311,21 +303,52 @@ namespace Kalkulator.Calculator
 		}
 
 		/// <summary>
-		///     Fix font size of ans text box.
+		/// Mení veľkosť textu v text displeji
 		/// </summary>
 		private void FixAnsFontSize()
 		{
-			// remove non numeric chars, expect spaces
-			string textAnsText = Utils.RemoveChars(this.text_display.Text, new[] {',', '-'});
-			double size = TextAnsBasicFontSize;
+			string textAnsText = OutputProcessor.RemoveChars(this.text_display.Text, new[] {',', '-'});	// odstráni nenumerické znaky
+			double size = TextFontSize;
 
-			if (textAnsText.Length > TextAnsBasicFontLimit)
+			if (textAnsText.Length > TextFontLength)
 			{
-				size -= TextAnsValueOfFontSizeReduction * (textAnsText.Length - TextAnsBasicFontLimit) *
-						((100 - (textAnsText.Length - TextAnsBasicFontLimit) * 2) / 100.0);
+				size -= TextFontSizePercentage * (textAnsText.Length - TextFontLength) *
+						((100 - (textAnsText.Length - TextFontLength) * 2) / 100.0);
 			}
 
 			this.text_display.FontSize = size;
+		}
+
+		/// <summary>
+		/// Kontroluje či je vstupná klávesa číslo
+		/// </summary>
+		/// <param name="key">Klávesa</param>
+		/// <returns>Číslo</returns>
+		public static bool IsNumericKey(Key key)
+		{
+			return key >= Key.D0 && key <= Key.D9 || key >= Key.NumPad0 && key <= Key.NumPad9;
+		}
+
+		/// <summary>
+		/// Odstraňuje medzery z textu
+		/// </summary>
+		/// <param name="s">Text z ktorého sa majú odstrániť medzery</param>
+		/// <returns>Text bez medzier</returns>
+		public static string RemoveSpaces(string s)
+		{
+			return Regex.Replace(s, @"\s", "");
+		}
+
+
+		/// <summary>
+		/// Odstraňuje dané znaky z textu
+		/// </summary>
+		/// <param name="s">Text z ktorého sa majú odstrániť dané znaky</param>
+		/// <param name="chars">Znaky ktoré sa majú odstrániť</param>
+		/// <returns>Text bez znakov</returns>
+		public static string RemoveChars(string s, IEnumerable<char> chars)
+		{
+			return chars.Aggregate(s, (current, c) => current.Replace(c.ToString(), string.Empty));
 		}
 	}
 }

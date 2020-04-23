@@ -1,16 +1,12 @@
 /********************************************************************************
  * Implementácia testov pre matematickú knižnicu pre 2. projekt IVS - Kalkulačka
  *
- * Názov tímu: Slovenska (j)elita
+ * Názov tímu: Slovenská (j)elita
  *
  * Autori projektu:    Tomáš Zaťko (xzatko02)
  *          		   Martin Rakús (xrakus04)
  *        	 	       Patrik Jacola (xjacol00)
  *          		   Monika Kubincová (xkubin24)
- *
- * Dátum: 	  7.4. 2020
- *
- * Verzia: 	  1.0
  ********************************************************************************/
 
 using System;
@@ -61,7 +57,7 @@ namespace Kalkulator.Tests
 			Assert.AreEqual(1111110, this.math.Add(123123, 987987));
 			Assert.AreEqual(-5000, this.math.Add(-1500, -3500));
 			Assert.AreEqual(50, this.math.Add(-100, 150));
-			Assert.AreEqual(42.123, this.math.Add(0, 42.123, Accuracy));
+			Assert.AreEqual(42.123, this.math.Add(0, 42.123), Accuracy);
 		}
 
 		/// <summary>
@@ -166,7 +162,6 @@ namespace Kalkulator.Tests
 			Assert.AreEqual(1, this.math.Log(9.99, 9.99), Accuracy);			// TRUE tests
 			Assert.AreEqual(1, this.math.Log(10, 10));
 			Assert.AreEqual(2, this.math.Log(10, 100));
-			Assert.AreEqual(3, this.math.Log(10, 1000));
 			Assert.AreEqual(4, this.math.Log(3, 81));
 			
 			try								// ošetrenia chybových stavov - nesprávne zadaných čísel do danej funkcie
