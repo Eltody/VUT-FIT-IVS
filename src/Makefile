@@ -2,7 +2,6 @@
 # GNU Make 	http://gnuwin32.sourceforge.net/packages/make.htm	(rozsireni cmd, funkce make)
 # GNU Zip  	http://gnuwin32.sourceforge.net/packages/zip.htm	(rozsireni cmd, funkce zip)
 # Doxygen  	http://www.doxygen.nl/download.html			(rozsireni cmd, generovani dokumentace)
-# INNO Setup	https://jrsoftware.org/isdl.php				(pro zkompilovani setup pro instalaci kalkulacky)
 
 # nastaveni promennych
 ROOT_DIR:=$(shell cd)\..
