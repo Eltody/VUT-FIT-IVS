@@ -22,9 +22,6 @@ src/Kalkulator/obj/Debug/App.g.cs
 src/Kalkulator/obj/Debug/About_us.g.i.cs
 src/Kalkulator/obj/Debug/About_us.g.cs
 src/Kalkulator/obj/Debug/About_us.baml
-src/Kalkulator/bin/Debug/Kalkulator.pdb
-src/Kalkulator/bin/Debug/Kalkulator.exe.config
-src/Kalkulator/bin/Debug/Kalkulator.exe
 src/Kalkulator/.vs/Calculator/v16/.suo
 src/Tests/bin/Debug/Tests.dll
 src/Tests/bin/Debug/Tests.pdb
@@ -57,8 +54,6 @@ src/Kalkulator/obj/Debug/Kalkulator_MarkupCompile.cache
 src/Kalkulator/obj/Debug/Kalkulator_MarkupCompile.lref
 src/Kalkulator/obj/Debug/MainWindow.baml
 src/Kalkulator/.vs/Calculator/v16/.suo
-src/Kalkulator/bin/Debug/Kalkulator.exe
-src/Kalkulator/bin/Debug/Kalkulator.pdb
 src/Kalkulator/obj/Debug/Calculator.csproj.CoreCompileInputs.cache
 src/Kalkulator/obj/Debug/Calculator.csproj.FileListAbsolute.txt
 src/Kalkulator/obj/Debug/Calculator.csproj.GenerateResource.cache
@@ -82,11 +77,6 @@ src/Kalkulator/obj/Debug/Kalkulator_MarkupCompile.cache
 src/Kalkulator/obj/Debug/Kalkulator_MarkupCompile.lref
 src/Kalkulator/obj/Debug/MainWindow.baml
 src/Tests/obj/Debug/Tests.csprojAssemblyReference.cache
-src/Kalkulator/bin/Release/Kalkulator.pdb
-src/Kalkulator/bin/Release/Kalkulator.exe.config
-src/Kalkulator/bin/Release/Kalkulator.exe
-src/Kalkulator/bin/Debug/Kalkulator.pdb
-src/Kalkulator/bin/Debug/Kalkulator.exe
 src/Kalkulator/.vs/Calculator/v16/.suo
 src/Kalkulator/obj/Debug/Calculator.csproj.CoreCompileInputs.cache
 src/Kalkulator/obj/Debug/Calculator.csproj.FileListAbsolute.txt
@@ -119,8 +109,6 @@ src/Kalkulator/obj/Release/MainWindow.g.i.cs
 src/Kalkulator/obj/Release/TempPE/Properties.Resources.Designer.cs.dll
 src/Tests/obj/Release/build.force
 src/Tests/obj/Release/Tests.csprojAssemblyReference.cache
-src/Kalkulator/bin/Release/(j)Elitná kalkulačka.exe
-src/Kalkulator/bin/Release/(j)Elitná kalkulačka.exe.config
 src/Kalkulator/bin/Release/(j)Elitná kalkulačka.pdb
 src/Kalkulator/obj/Release/(j)Elitná kalkulačka.exe
 src/Kalkulator/obj/Release/(j)Elitná kalkulačka.g.resources
@@ -130,3 +118,5 @@ src/Kalkulator/obj/Release/(j)Elitná kalkulačka_MarkupCompile.cache
 src/Kalkulator/obj/Release/(j)Elitná kalkulačka_MarkupCompile.i.cache
 src/Kalkulator/obj/Release/(j)Elitná kalkulačka_MarkupCompile.lref
 src/Kalkulator/obj/Release/Calculator.csprojAssemblyReference.cache
+src/Kalkulator/obj/Release/Calculator.csprojAssemblyReference.cache
+src/Kalkulator/obj/Release/DesignTimeResolveAssemblyReferences.cache
